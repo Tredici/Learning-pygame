@@ -31,7 +31,7 @@ while True:
             pygame.quit()
             sys.exit()
         # evento click del mouse
-        elif event.type == pygame.MOUSEBUTTONDOWN:
+        elif event.type == pygame.MOUSEBUTTONDOWN and ballrect.collidepoint(event.pos):
             mouseDown = True    # ricorda lo stato
             ballrect.center = event.pos
         # si alza il mouse
